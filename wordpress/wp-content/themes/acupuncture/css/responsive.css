@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/*--------------media query css------------------*/	
+/*------------tablet landscape view------*/
+@media (max-width:1000px) {
+.main { width: 96%; padding: 0 2%; }
+.nav-menu li a { font-size: 16px; }
+.contact-num { margin-right: 4px; padding-right: 4px; }
+h2 { font-size: 32px; padding-bottom: 10px; }
+.logo { margin-left: 0; }
+.contact-us { font-size: 16px; }
+.cont-blog1 h2 { padding-bottom: 10px; }
+.about-details li h3 { font-size: 22px; }
+.about-details li { width: 48%; }
+.why-acptr-details { width: 617px; margin: 0 auto; float: none; }
+.healing-accordion { width: 100%; float: none; margin: 20px 0 0; }
+.tab-content { min-height: inherit; }
+h2.resp-accordion { font-size: 22px; font-family: Helvetica, Arial, sans-serif; }
+.testimonials { width: 100%; margin: 0 0 20px; }
+.testimonials-img { display: block; width: auto; text-align: center; }
+.practitioner-img-wrapper { width: 40%; }
+.practitioner-details-wrapper { width: 58%; }
+.practitioner-details { padding: 20px; }
+.cont-blog2, .cont-blog3, .cont-blog4, .cont-blog5 { padding: 40px 0; }
+.practitioner-details a { margin-top: 40px; }
+.healing-accordion ul li a em { font-size: 38px; }
+.about-left-details { width: 60%; }
+.side-bar-content { width: 35%; padding-top: 0; }
+.banner-text{ right:0;}
+}
+
+/*------------tablet portrait  view------*/
+@media (max-width:899px) {
+.practitioner-details a { margin-top: 18px; }
+.practitioner-details p { line-height: 22px; }
+.nav-menu li { margin: 0 5px; }
+}
+
+/*------------mobile landscape  view------*/
+@media (max-width:767px) {
+.navbar { background-color: #043651; position: inherit; }
+.menu-icon { display: block; text-align: center; padding: 0; font-size: 20px; padding: 12px 0; line-height: 20px; cursor: pointer; color: #fff; }
+.enumenu_ul { display: none; }
+.why-acptr-details { width: 100%; padding: 20px; background-repeat:repeat; }
+.why-acptr-text { width: 100%; padding: 15px; }
+.banner-image { min-height: 220px; }
+.testimonials p { font-size: 14px; line-height: 24px; }
+.practitioner-img-wrapper { width: 364px; margin: 0 auto; float: none; }
+.practitioner-details-wrapper { width: 100%; margin-top: 20px; }
+.banner-text { padding: 50px 0; }
+.main-navigation { min-height: auto; }
+.nav-menu li { margin: 0; width: 100%; border-top: 1px solid #fff; display: block; }
+.nav-menu li a { display: block; padding: 12px 0; color: #fff; transition: all ease 0.5s; }
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus { border: none; color: #b3023d; }
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a { border: none; color: #b3023d; }
+.about-details li { width: 100%; border: none; margin: 0; padding: 0; margin-bottom: 20px; }
+.about-details li:last-child { padding: 0; }
+.about-details li a { margin: 20px 0 0; }
+/*	.about-details li p{ height:120px;}*/
+.healing-accordion ul li a em { line-height: normal; font-size: 28px; }
+.healing-accordion ul li a { font-size: 20px; padding: 4px 0 4px 15px; }
+.accordion-title.active > span { background-position: 0 18px; }
+.footer-cotnt { display: block; text-align: center; margin: 0 auto; }
+.footer-cotnt p { width: auto; font-size: 16px; }
+.footer-cotnt ul li a { margin: 0 20px; }
+.top-footer { padding: 40px 0 10px; }
+.contact-us { float: none; text-align: center; }
+.logo { float: none; text-align: center; }
+.contact-num { padding-right: 8px; }
+.appointment-btn { padding: 12px 25px; }
+.about-details { padding: 20px 0; }
+.healing-accordion h3 { font-size: 24px; }
+h2 { font-size: 28px; }
+.footer-cotnt em { margin: 2px 0; }
+.testimonials p:after { margin-left: 7px; }
+.inner_banner { min-height: 200px; }
+.side-bar-content { padding-top: 10px; }
+.inner-page { padding: 25px 0 60px; }
+.about-left-details { width: 100%; }
+.side-bar-content { width: 100%; }
+.nav-menu .sub-menu, .nav-menu .children { position: relative; border: none; }
+.nav-menu .sub-menu .current_page_item > a, .nav-menu .sub-menu .current_page_ancestor > a, .nav-menu .sub-menu .current-menu-item > a, .nav-menu .sub-menu .menu-item-has-children > a { background-color: transparent; border-bottom: none; }
+ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-menu ul ul a:focus { border-bottom: none; background-color: transparent; }
+ul.nav-menu ul a, .nav-menu ul ul a { display: block; text-align: center; border-bottom: none; width: 100%; padding: 12px 0; }
+ul.nav-menu li ul { display: none; border: none; padding: 0; }
+
+.home-page-slider{ height:auto;}
+
+
+}
+
+/*------------mobile portrait view------*/
+@media (max-width:639px) {
+.footer-cotnt ul li a { margin: 0 10px; }
+.banner-text h2 { font-size:32px; }
+.contact-num { display: block; border: none; margin-bottom: 3px; }
+.banner-text { padding: 35px 0; }
+.why-acptr-text h2 { font-size: 26px; line-height: 26px; padding-bottom: 15px; }
+h2 { font-size: 24px; }
+.cont-blog5 a { width: 100%; font-size: 15px; margin-top: 22px; }
+.contact-us { margin-top: 10px; }
+.about-left-details p { font-size: 12px; }
+.inner-page h2 { font-size: 32px; padding-bottom: 15px; line-height: 32px; }
+.about-left-details p { padding-top: 15px; }
+.side-bar-content .widget_nav_menu li a { font-size: 16px; }
+.practitioner-details h3 { font-size: 21px; }
+
+
+}
+
+@media (min-width:768px) {
+.menu-icon { display: none; }
+}
+
+/*----------optional css------*/
+@media (max-width:411px) {
+.practitioner-img-wrapper { width: 100%; }
+}
+/*---------use only when design is customise-----------*/
