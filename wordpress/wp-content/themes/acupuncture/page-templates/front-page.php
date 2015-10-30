@@ -48,10 +48,10 @@ get_header(); ?>
 						$string =  wordwrap(strip_tags($shortdescriptionright), 580); 
 						$i = strpos($string, " ", 580);
 						
-						$contentleft = substr($string, 0, $i);
+						$contentright = substr($string, 0, $i);
 						}
 						else{
-							$contentleft = $shortdescright;
+							$contentright = $shortdescright;
 						}
        ?>
         <h2><?php echo $about_acupuncture_title; ?></h2>
@@ -61,7 +61,7 @@ get_header(); ?>
             <p><?php echo $contentleft; ?></p> <a href="<?php echo $what_we_do_link; ?>" title="LEARN MORE" class="learn-more-btn">LEARN MORE</a> </li>
           <li>
             <h3><?php echo $what_to_expect_title; ?></h3>
-            <p><?php echo $contentleft; ?></p> <a href="<?php echo $what_to_expect_link; ?>" title="LEARN MORE" class="learn-more-btn">LEARN MORE</a> </li>
+            <p><?php echo $contentright; ?></p> <a href="<?php echo $what_to_expect_link; ?>" title="LEARN MORE" class="learn-more-btn">LEARN MORE</a> </li>
         </ul>
       </div>
     </div>
