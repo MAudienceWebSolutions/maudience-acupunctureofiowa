@@ -18,13 +18,10 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php
+<div class="entry-content inner-page">
+<div class="main cf">
+<header class="archive-header">
+				<h2><?php
 					if ( is_day() ) :
 						printf( __( 'Daily Archives: %s', 'twentythirteen' ), get_the_date() );
 					elseif ( is_month() ) :
@@ -34,8 +31,13 @@ get_header(); ?>
 					else :
 						_e( 'Archives', 'twentythirteen' );
 					endif;
-				?></h1>
+				?></h2>
 			</header><!-- .archive-header -->
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+           <div class="about-left-details blog-left cf">
+		<?php if ( have_posts() ) : ?>
+			
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -47,9 +49,13 @@ get_header(); ?>
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
-
+           </div>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<div class="blog-right side-bar-content cf">
+<?php get_sidebar( 'main' ); ?>
+</div>
+</div>
+</div>
 <?php get_footer(); ?>

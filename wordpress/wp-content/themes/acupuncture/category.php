@@ -10,19 +10,21 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
+<div class="entry-content inner-page">
+ <div class="main cf">
+ <header class="archive-header">
+				<h2><?php printf( __( 'Category Archives: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h2>
 
 				<?php if ( category_description() ) : // Show an optional category description ?>
 				<div class="archive-meta"><?php echo category_description(); ?></div>
 				<?php endif; ?>
 			</header><!-- .archive-header -->
-
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+       <div class="about-left-details blog-left cf">
+		<?php if ( have_posts() ) : ?>
+			
+     
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
@@ -33,9 +35,13 @@ get_header(); ?>
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
-
+          </div>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<div class="blog-right side-bar-content cf">
+<?php get_sidebar( 'main' ); ?>
+</div>
+</div>
+</div>
 <?php get_footer(); ?>

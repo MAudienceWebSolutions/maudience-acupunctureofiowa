@@ -8,10 +8,13 @@
  */
 
 get_header(); ?>
+<div class="entry-content inner-page">
 
+ <div class="main cf">
+ <h2><?php the_title(); ?></h2>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
+          <div class="about-left-details blog-left cf">
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -20,9 +23,13 @@ get_header(); ?>
 				<?php comments_template(); ?>
 
 			<?php endwhile; ?>
-
+           </div>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<div class="blog-right side-bar-content cf">
+<?php get_sidebar( 'main' ); ?>
+</div>
+</div>
+</div>
 <?php get_footer(); ?>

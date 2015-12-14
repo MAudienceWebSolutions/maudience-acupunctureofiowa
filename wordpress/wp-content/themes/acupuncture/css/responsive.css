@@ -74,7 +74,7 @@ h2 { font-size: 28px; }
 .footer-cotnt em { margin: 2px 0; }
 .testimonials p:after { margin-left: 7px; }
 .inner_banner { min-height: 200px; }
-.side-bar-content { padding-top: 10px; }
+.side-bar-content { padding-top: 10px; padding-bottom:10px; }
 .inner-page { padding: 25px 0 60px; }
 .about-left-details { width: 100%; }
 .side-bar-content { width: 100%; }
@@ -85,6 +85,10 @@ ul.nav-menu ul a, .nav-menu ul ul a { display: block; text-align: center; border
 ul.nav-menu li ul { display: none; border: none; padding: 0; }
 
 .home-page-slider{ height:auto;}
+ul{ padding:0;}
+li{ font-size:12px; padding:5px;}
+.side-bar-content .widget-title{ font-size:18px;}
+.gform_wrapper{ width:100% !important; padding:0 20px !important;}
 
 
 }

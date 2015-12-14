@@ -15,9 +15,14 @@
  */
 
 get_header(); ?>
-
+<div class="entry-content inner-page">
+ <div class="main cf">
+   <h2>Blog</h2>
 	<div id="primary" class="content-area">
+   
 		<div id="content" class="site-content" role="main">
+        
+        <div class="about-left-details blog-left cf">
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* The loop */ ?>
@@ -30,9 +35,14 @@ get_header(); ?>
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
-
+	</div>
+    </div>
 		</div><!-- #content -->
-	</div><!-- #primary -->
+	<!-- #primary -->
 
-<?php get_sidebar(); ?>
+<div class="blog-right side-bar-content cf">
+<?php get_sidebar( 'main' ); ?>
+</div>
+</div>
+</div>
 <?php get_footer(); ?>
